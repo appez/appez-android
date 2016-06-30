@@ -109,6 +109,7 @@ public class SmartViewActivity extends Activity implements SmartConnectorListene
 
 	private boolean isSoftKeyboardShown = false;
 
+	/** Android activity lifecycle method */
 	@SuppressLint("NewApi")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
