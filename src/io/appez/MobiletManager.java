@@ -186,6 +186,7 @@ public class MobiletManager implements SmartEventListener {
 		}
 	}
 
+	/**Set the request body for service request*/
 	public void setRequestBody(Context context, String reqBody) {
 		callbackEvent.setServiceRequestData(reqBody);
 	}
