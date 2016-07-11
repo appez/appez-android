@@ -47,7 +47,7 @@ public class NotifierEventProcessor implements NotifierEventListener {
 		}
 	}
 
-	/**Notification for the Success Event*/
+	/**Notifier Event Received Success for Success Event*/
 	@Override
 	public void onNotifierEventReceivedSuccess(NotifierEvent notifierEvent) {
 		this.smartNotifierListener.onReceiveNotifierEventSuccess(notifierEvent);
