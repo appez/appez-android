@@ -368,12 +368,12 @@ public class SmartViewActivity extends Activity implements SmartConnectorListene
 							} else {
 								actionbar.hide();
 							}
-
+							// Set the screen title on the Action bar
+							String screenTitle = screenInformationJson.getString("title");
+							TextView actionBarCustomTextView = AppUtility.getTextViewWithProps(screenTitle, topbarTextColor);
+							actionbar.setCustomView(actionBarCustomTextView);
 						}
-						// Set the screen title on the Action bar
-						String screenTitle = screenInformationJson.getString("title");
-						TextView actionBarCustomTextView = AppUtility.getTextViewWithProps(screenTitle, topbarTextColor);
-						actionbar.setCustomView(actionBarCustomTextView);
+						
 					} else {
 						// For devices running Android 2.3
 						if (showActionBar) {
